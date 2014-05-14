@@ -6,7 +6,7 @@ case node.platform_family
 when "debian"
   pkg = node.redis.package_name
 when "rhel", "fedora"
-  include_recipe "yum::epel"
+  include_recipe node.redis.yum_epel_recipe
   pkg = "redis"
 else
   pkg = "redis"

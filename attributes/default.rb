@@ -30,6 +30,7 @@ default.redis.conf_dir   = "/etc/redis"
 default.redis.init_style = "init"
 default.redis.symlink_binaries = false
 default.redis.ulimit = 10032
+default.redis.yum_epel_recipe = "yum::epel"
 
 # service user & group
 default.redis.user  = "redis"
